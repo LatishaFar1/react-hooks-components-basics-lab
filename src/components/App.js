@@ -4,6 +4,7 @@ function NavBar() {
   return (
     <nav>
       <a href="#home">I'm a link!</a>
+      <a href="#about">About</a>
     </nav>
   );
 }
@@ -16,12 +17,19 @@ function Home() {
   );
 }
 
+function About(){
+  return (
+    <div id ="about">
+      </div>
+  );
+}
+
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* write an <About> component here */}
+      <Home />
+      <About />
     </div>
   );
 }
